@@ -36,7 +36,7 @@ public class HomePage {
 
 	public void waitToPageLoad() {
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -45,7 +45,10 @@ public class HomePage {
 	public void clickOnApplyLink() {
 		waitToPageLoad();
 		System.out.println("Page");
-		driver.findElement(appplylink).click();
+		WebElement ApplyNow = driver.findElement(By.xpath("(//a[text () = 'Apply Now'])")) 
+		JavascriptExecutor executor = (JavascriptExecutor) driver; 
+		executor.executeScript("arguments[0].click();", ApplyNow);
+		//driver.findElement(appplylink).click();
 	}
 
 	public void clickOnApplybutton() {

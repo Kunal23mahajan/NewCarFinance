@@ -9,7 +9,7 @@ public class HomePageStepsDef {
 	HomePage homePage = new HomePage(Base.baseMethod());
 	@When("user clicks on apply now link")
 	public void user_clicks_on_apply_now_link() {
-
+                System.out.println("User is on Kotak Mahindra Home screen");
 		homePage.clickOnApplyLink();
 		System.out.println("User clicks on Apply Now link on Home screen");
 	}

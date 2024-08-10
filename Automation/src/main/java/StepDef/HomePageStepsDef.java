@@ -6,9 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
 public class HomePageStepsDef {
-
 	HomePage homePage = new HomePage(Base.baseMethod());
-    @Test
 	@When("user clicks on apply now link")
 	public void user_clicks_on_apply_now_link() {
 

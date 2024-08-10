@@ -44,6 +44,7 @@ public class HomePage {
 
 	public void clickOnApplyLink() {
 		waitToPageLoad();
+		System.out.println("Page");
 		driver.findElement(appplylink).click();
 	}
 

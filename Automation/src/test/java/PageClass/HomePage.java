@@ -16,7 +16,8 @@ public class HomePage {
 	private WebDriver driver;
 	WebElement element = null;
 
-	private By appplylink = By.xpath("(//a[text () = 'Apply Now'])");
+//	private By appplylink = By.xpath("(//a[text () = 'Apply Now'])");
+	private By appplylink = By.xpath("(//a[contains(text(), 'Apply Now')])");
 	private By applybutton = By.xpath("(//a[contains(@class,'box-btn')])[1]");
 	private By applyNowOnNewCarFinance = By.xpath("(//a[contains(@class,'active')])[1]");
 	//private By clickHereLinkOnNewCarFinance = By.xpath("(//select[contains(@class,'valid')])[1]");

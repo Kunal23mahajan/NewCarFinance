@@ -45,7 +45,7 @@ public class HomePage {
 	public void clickOnApplyLink() {
 		waitToPageLoad();
 		System.out.println("Page");
-		WebElement ApplyNow = driver.findElement(By.xpath("(//a[text () = 'Apply Now'])"));
+		WebElement ApplyNow = driver.findElement(By.xpath("(//a[text () = 'Apply Now '])"));
 		JavascriptExecutor executor = (JavascriptExecutor) driver; 
 		executor.executeScript("arguments[0].click();", ApplyNow);
 		//driver.findElement(appplylink).click();

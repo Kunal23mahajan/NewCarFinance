@@ -14,8 +14,7 @@ public class Base {
 	public static ThreadLocal<WebDriver> tPath = new ThreadLocal<>();
 
 	public static WebDriver baseMethod() {
-		//System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-                System.setProperty("webdriver.chrome.driver", "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CarFinance\\Automation\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://primeloans.kotak.com");

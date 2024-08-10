@@ -20,7 +20,7 @@ public class Base {
 		driver.get("https://primeloans.kotak.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+		System.out.println("Driver Factory");
 		return driver;
 	}
 	

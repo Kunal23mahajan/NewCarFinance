@@ -35,7 +35,7 @@ public class HomePage {
 
 	public void waitToPageLoad() {
 		try {
-			Thread.sleep(4000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -43,8 +43,6 @@ public class HomePage {
 
 	public void clickOnApplyLink() {
 		waitToPageLoad();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(appplylink));
 		driver.findElement(appplylink).click();
 	}
 
